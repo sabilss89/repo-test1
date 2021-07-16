@@ -1,0 +1,18 @@
+{
+  "Resources" : {
+    "MyFirstec2instance" : {
+      "Type" : "AWS::EC2::Instance",
+      "Properties" : {
+        "ImageId" : "ami-06a0b4e3b7eb7a300",
+        "InstanceType" : "t2.micro",
+	"KeyName" : "Mumbai_key",
+	"SecurityGroupIds" : [ "sg-09e104add36b81bb2" ],
+	"SubnetId" :[ "subnet-5c99ff27" ],
+	"Tags" : [
+	"Key" : Name,
+  	"Value" : Mytest ],
+      }
+    } 
+  }
+}
+ 
